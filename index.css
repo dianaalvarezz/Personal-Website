@@ -1,6 +1,4 @@
 
-
-
 body {
         margin: 0;
         display: flex;
@@ -221,6 +219,6 @@ middle-container, .lower-container {
         display: inline-block;
         outline: none;
         margin-top: 8px;
-        width: 280;
-        height: auto;
+        width: 200px;
+        height: 60px;
 }
