@@ -1,0 +1,224 @@
+
+body {
+        margin: 0;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+}
+
+.top-box {
+        width: 100%;
+        background-color: #002244;
+        padding: 1px 10px;
+        box-sizing: border-box;
+        position: relative;
+}
+
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+}
+
+
+.name {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 18px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #ff8396;
+}
+
+.button-container {
+        width: 100%;
+        background-color: #FFC0CB;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+        box-sizing: border-box;
+}
+
+.button {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        color: #002244;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 20px;
+        transition: 0.3s;
+        text-align: center;
+        margin-top: 3px;
+        border-radius: 3px;
+        width: 120px;
+        font-family: Helvetica, Arial, sans-serif;
+}
+
+.button:hover {
+        background-color: #ddd;
+}
+
+.social-img {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+}
+
+.social-icon {
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
+}
+
+.middle-box, .lower-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+}
+
+.welcome-box, .software-box {
+        background-color: #002244;
+        width: 400px;
+}
+
+.picture {
+        margin: 0;
+        border: none;
+        width: 200px; /* Fixed width for each box */
+        flex-grow: 0;
+        flex-shrink: 0; /* Prevents shrinking */
+        flex-basis: auto;
+}
+
+ .about-box, .skills-box, .projects-box, .experiences-box {
+        width: 200px;
+        background-color: #FFC0CB;
+        position: relative;
+}
+
+.about-box::before, .skills-box::before, .projects-box::before, .experiences-box::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 30px; /* Thickness of the strip */
+        background-color: #ff9dab;
+}
+
+.welcome-box, .software-box, .about-box, .skills-box, .projects-box, .experiences-box {
+        text-align: center;
+        margin: 35px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Helvetica, Arial, sans-serif;
+        flex-grow: 0;
+        flex-shrink: 0; /* Prevents shrinking */
+        flex-basis: auto;
+}
+
+
+.picture img {
+        max-width: 100%; /* Ensure image does not overflow its container */
+        height: auto; /* Maintain image aspect ratio */
+}
+
+
+.welcome-text, .software-text {
+        color: #ff8396;
+        font-family: Helvetica, Arial, sans-serif;
+
+}
+
+
+middle-container, .lower-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allows boxes to wrap if needed */
+        max-width: 80%;
+        margin: auto; /* Centers the container */
+ }
+
+.pic img{
+        width: auto;     
+        max-width: 100px;  
+        max-height: 100px;
+        object-fit: contain; 
+        display: block;   
+        margin: auto;   
+        padding-top: 20px;
+        padding-bottom: 20px;
+ }
+
+.software-button {
+        display: flex;
+        align-items: center;
+        background-color: transparent; /* No background color */
+        border: none; /* Removes border */
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white; /* Text color */
+}
+
+.software-button img {
+        max-width: 40px; /* Adjust as needed */
+        max-height: 40px; /* Adjust as needed */
+        margin-right: 15px; /* Increase space between the image and text */
+}
+
+.software-button span {
+        margin-left: 15px; /* Additional space before the text */
+}
+.about-text, .skills-text, .projects-text, .experiences-text {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 10px;
+}
+
+.welcome-paragraph {
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #FFC0CB;
+}
+
+.lower-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 6px; /* Reduced padding */
+}
+
+.long-button {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #FFC0CB;
+        border: 2px solid #000000;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        border-radius: 8px;
+        display: inline-block;
+        outline: none;
+        margin-top: 8px;
+        width: 200px;
+        height: 60px;
+}
