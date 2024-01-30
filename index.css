@@ -45,21 +45,21 @@ body {
 }
 
 .button {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    color: #002244;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 5px 20px;
-    transition: 0.3s;
-    text-align: center;
-    margin-top: 3px;
-    border-radius: 3px;
-    width: 120px;
-    font-family: Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        color: #002244;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 5px 20px;
+        transition: 0.3s;
+        text-align: center;
+        margin-top: 3px;
+        border-radius: 3px;
+        width: 120px;
+        font-family: Helvetica, Arial, sans-serif;
 }
 
 .button:hover {
@@ -73,9 +73,9 @@ body {
 }
 
 .social-icon {
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
 }
 
 .middle-box, .lower-box {
@@ -95,9 +95,9 @@ body {
         margin: 0;
         border: none;
         width: 200px; /* Fixed width for each box */
-    flex-grow: 0;
-    flex-shrink: 0; /* Prevents shrinking */
-    flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 0; /* Prevents shrinking */
+        flex-basis: auto;
 }
 
  .about-box, .skills-box, .projects-box, .experiences-box {
@@ -107,34 +107,34 @@ body {
 }
 
 .about-box::before, .skills-box::before, .projects-box::before, .experiences-box::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 30px; /* Thickness of the strip */
-    background-color: #ff9dab;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 30px; /* Thickness of the strip */
+        background-color: #ff9dab;
 }
 
 .welcome-box, .software-box, .about-box, .skills-box, .projects-box, .experiences-box {
-    text-align: center;
-    margin: 35px;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Helvetica, Arial, sans-serif;
-    flex-grow: 0;
-    flex-shrink: 0; /* Prevents shrinking */
-    flex-basis: auto;
+        text-align: center;
+        margin: 35px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Helvetica, Arial, sans-serif;
+        flex-grow: 0;
+        flex-shrink: 0; /* Prevents shrinking */
+        flex-basis: auto;
 }
 
 
 .picture img {
-    max-width: 100%; /* Ensure image does not overflow its container */
-    height: auto; /* Maintain image aspect ratio */
+        max-width: 100%; /* Ensure image does not overflow its container */
+        height: auto; /* Maintain image aspect ratio */
 }
 
 
@@ -146,12 +146,12 @@ body {
 
 
 middle-container, .lower-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Allows boxes to wrap if needed */
-    max-width: 80%;
-    margin: auto; /* Centers the container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allows boxes to wrap if needed */
+        max-width: 80%;
+        margin: auto; /* Centers the container */
  }
 
 .pic img{
@@ -166,25 +166,25 @@ middle-container, .lower-container {
  }
 
 .software-button {
-    display: flex;
-    align-items: center;
-    background-color: transparent; /* No background color */
-    border: none; /* Removes border */
-    padding: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: white; /* Text color */
+        display: flex;
+        align-items: center;
+        background-color: transparent; /* No background color */
+        border: none; /* Removes border */
+        padding: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white; /* Text color */
 }
 
 .software-button img {
-    max-width: 40px; /* Adjust as needed */
-    max-height: 40px; /* Adjust as needed */
-    margin-right: 15px; /* Increase space between the image and text */
+        max-width: 40px; /* Adjust as needed */
+        max-height: 40px; /* Adjust as needed */
+        margin-right: 15px; /* Increase space between the image and text */
 }
 
 .software-button span {
-    margin-left: 15px; /* Additional space before the text */
+        margin-left: 15px; /* Additional space before the text */
 }
 .about-text, .skills-text, .projects-text, .experiences-text {
         font-family: Helvetica, Arial, sans-serif;
@@ -198,11 +198,11 @@ middle-container, .lower-container {
 }
 
 .lower-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 6px; /* Reduced padding */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 6px; /* Reduced padding */
 }
 
 .long-button {
