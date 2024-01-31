@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.top-box {
+    width: 100%;
+    background-color: #002244;
+    padding: 1px 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.name {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ff8396;
+}
+
+.social-img {
+    display: flex;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px; /* Reduced for closer icon grouping */
+}
+
+.button-container {
+    width: 100%;
+    background-color: #FFC0CB;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.button {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: #002244;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 3px;
+    width: 120px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.social-img {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #002244;
+}
+
+.header p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #002244;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section p, .section ul {
+    margin-left: 20px;
+}
+
+.section li {
+    margin-bottom: 5px;
+}
+
+.project-title, .education-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-date, .education-date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.memberships, .leadership {
+    font-style: italic;
+    color: #666;
+}
+
