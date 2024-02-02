@@ -75,3 +75,38 @@ body {
     background-color: #ddd;
 }
 
+.center {
+     text-align: center;
+}
+
+.education-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-details, .right-details {
+    flex: 1; /* Both take equal space */
+}
+
+.left-details {
+    text-align: left;
+}
+
+.right-details {
+    text-align: right;
+}
+.project-detail {
+    display: flex;
+    flex-direction: column; /* Stack title/date and list vertically */
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between; /* Align title to left, date to right */
+    width: 100%; /* Ensure the container spans full available width */
+}
+
+.project-date {
+    white-space: nowrap; /* Keep the date from wrapping */
+}
