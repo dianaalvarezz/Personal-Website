@@ -11,7 +11,7 @@ body {
 .top-box {
         width: 100%;
         background-color: #002244;
-        padding: 1px 10px;
+        padding: 0px 9px;
         box-sizing: border-box;
         position: relative;
 }
@@ -45,21 +45,21 @@ body {
 }
 
 .button {
-        font-size: 24px;
-        font-weight: bold;
-        text-decoration: none;
-        display: inline-block;
-        color: #002244;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 5px 20px;
-        transition: 0.3s;
-        text-align: center;
-        margin-top: 3px;
-        border-radius: 3px;
-        width: 120px;
-        font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: #002244;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 3px;
+    width: 120px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .button:hover {
@@ -73,9 +73,9 @@ body {
 }
 
 .social-icon {
-        width: 30px;
-        height: 30px;
-        margin-left: 30px;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
 }
 
 .middle-box, .lower-box {
@@ -87,17 +87,27 @@ body {
 }
 
 .welcome-box, .software-box {
-        background-color: #002244;
-        width: 400px;
+       background-color: #002244;
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    margin: 35px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .picture {
         margin: 0;
         border: none;
         width: 200px; /* Fixed width for each box */
-        flex-grow: 0;
-        flex-shrink: 0; /* Prevents shrinking */
-        flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0; /* Prevents shrinking */
+    flex-basis: auto;
 }
 
  .about-box, .skills-box, .projects-box, .experiences-box {
@@ -107,51 +117,43 @@ body {
 }
 
 .about-box::before, .skills-box::before, .projects-box::before, .experiences-box::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 30px; /* Thickness of the strip */
-        background-color: #ff9dab;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px; /* Thickness of the strip */
+    background-color: #ff9dab;
 }
 
 .welcome-box, .software-box, .about-box, .skills-box, .projects-box, .experiences-box {
-        text-align: center;
-        margin: 35px;
-        padding: 20px;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Helvetica, Arial, sans-serif;
-        flex-grow: 0;
-        flex-shrink: 0; /* Prevents shrinking */
-        flex-basis: auto;
+    box-sizing: border-box;
+    min-height: 200px; /* Use min-height instead of height */
+    margin: 35px;
+    padding: 10px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Ensure content is stacked vertically */
 }
 
 
 .picture img {
-        max-width: 100%; /* Ensure image does not overflow its container */
-        height: auto; /* Maintain image aspect ratio */
+    max-width: 100%; /* Ensure image does not overflow its container */
+    height: auto; /* Maintain image aspect ratio */
 }
 
-
-.welcome-text, .software-text {
-        color: #ff8396;
-        font-family: Helvetica, Arial, sans-serif;
-
-}
 
 
 middle-container, .lower-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; /* Allows boxes to wrap if needed */
-        max-width: 80%;
-        margin: auto; /* Centers the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows boxes to wrap if needed */
+    max-width: 80%;
+    margin: auto; /* Centers the container */
  }
 
 .pic img{
@@ -166,43 +168,48 @@ middle-container, .lower-container {
  }
 
 .software-button {
-        display: flex;
-        align-items: center;
-        background-color: transparent; /* No background color */
-        border: none; /* Removes border */
-        padding: 10px;
-        margin-bottom: 10px;
-        cursor: pointer;
-        text-decoration: none;
-        color: white; /* Text color */
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* No background color */
+    border: none; /* Removes border */
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white; /* Text color */
 }
 
 .software-button img {
-        max-width: 40px; /* Adjust as needed */
-        max-height: 40px; /* Adjust as needed */
-        margin-right: 15px; /* Increase space between the image and text */
+    max-width: 40px; /* Adjust as needed */
+    max-height: 40px; /* Adjust as needed */
+    margin-right: 15px; /* Increase space between the image and text */
 }
 
 .software-button span {
-        margin-left: 15px; /* Additional space before the text */
+    margin-left: 15px; /* Additional space before the text */
 }
-.about-text, .skills-text, .projects-text, .experiences-text {
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 10px;
+about-text, .skills-text, .projects-text, .experiences-text {
+    font-size: 10px; /* Adjust font size as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    padding: 5px; /* Ensure some padding around text */
 }
 
-.welcome-paragraph {
-        font-size: 12px;
-        font-family: Helvetica, Arial, sans-serif;
-        color: #FFC0CB;
+.welcome-paragraph, .welcome-text, .software-text {
+    font-size: 12px; /* Adjust based on fit */
+    color: #FFC0CB;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 
 .lower-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 6px; /* Reduced padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px; /* Reduced padding */
 }
 
 .long-button {
@@ -219,6 +226,6 @@ middle-container, .lower-container {
         display: inline-block;
         outline: none;
         margin-top: 8px;
-        width: 200px;
-        height: 60px;
+        width: 280;
+        height: auto;
 }
