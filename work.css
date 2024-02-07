@@ -30,6 +30,7 @@ body {
         font-size: 18px;
         font-family: Helvetica, Arial, sans-serif;
         color: #ff8396;
+        text-decoration: none;
 }
 
 .button-container {
@@ -76,4 +77,38 @@ body {
         width: 30px;
         height: 30px;
         margin-left: 30px;
+}
+
+
+.job {
+    border-top: 2px solid #ccc; /* Adds a top border for separation */
+    padding-top: 20px; /* Spacing above the category title */
+    margin-top: 20px; /* Spacing above the border */
+    width: 80%; /* Control the width to center the content */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.text-content {
+    display: flex;   
+    flex-direction: column; /* Stacks child paragraphs vertically */
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1; /* Takes up remaining space */
+    gap: 20px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}  
+
+.text-content p {
+    margin: 0; /* Adds a 20px margin to the bottom of each paragraph */
+    flex: 1;
+    line-height: 1.4;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1rem;
+}
+
+.position {
+    margin-top: 5px; /* Spacing above the border */
+    width: 80%; /* Control the width to center the content */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+   text-decoration: none;
 }
