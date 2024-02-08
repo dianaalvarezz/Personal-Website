@@ -78,3 +78,30 @@ body {
     height: 30px;
     margin-left: 30px;
 }
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+    grid-gap: 20px; /* Space between items */
+    width: 100%; /* Ensure grid takes full available width */
+    max-width: 1200px; /* Optional: limits the grid's maximum width */
+    margin: auto; /* Centers the grid horizontally if under max-width */
+}
+
+.grid > div {
+   display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: flex-start; /* Aligns children at the top */
+    align-items: center; /* Centers children horizontally */
+    text-align: center; /* Ensures text is centered */
+    padding: 10px; /* Adds some padding inside each grid cell */
+    height: 100%;
+}
+
+.picture img {
+    max-width: 100%; /* Makes sure the image does not exceed its container */
+    height: auto; /* Maintains aspect ratio */
+}
