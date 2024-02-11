@@ -87,19 +87,22 @@ body {
 }
 
 .welcome-box, .software-box {
-       background-color: #002244;
-    width: 300px; /* Fixed width */
-    height: 200px; /* Fixed height */
+    background-color: #002244;
+    width: 400px; /* Fixed width */
+    min-height: 200px; /* Minimum height */
+    height: auto; /* Allows box to expand based on content */
     margin: 35px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
+    color: #ffffff; /* Ensures text color is visible against the background */
 }
+
 
 .picture {
         margin: 0;
@@ -125,6 +128,20 @@ body {
     right: 0;
     height: 30px; /* Thickness of the strip */
     background-color: #ff9dab;
+}
+
+.middle-box {
+    display: flex;
+    flex-direction: row; /* Items are laid out in a row */
+    justify-content: center; /* Centers items horizontally */
+    align-items: flex-start; /* Aligns items to start at the same level */
+    gap: 30px; /* Adjust this value to increase the space between items */
+    width: 100%;
+    padding: 20px;
+}
+
+.picture, .welcome-box, .software-box {
+    margin: 20px; /* Adds margin around each item for additional spacing */
 }
 
 .welcome-box, .software-box, .about-box, .skills-box, .projects-box, .experiences-box {
@@ -229,4 +246,4 @@ about-text, .skills-text, .projects-text, .experiences-text {
         width: 280;
         height: auto;
 }
- 
+
