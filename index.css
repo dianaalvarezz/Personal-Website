@@ -88,10 +88,8 @@ body {
 
 .welcome-box, .software-box {
     background-color: #002244;
-    width: 400px; /* Fixed width */
-    min-height: 200px; /* Minimum height */
-    height: auto; /* Allows box to expand based on content */
-    margin: 35px;
+    width: 400px; /* Adjusted width */
+    min-height: 250px; /* Adjusted min-height for consistency */
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -100,7 +98,8 @@ body {
     align-items: center;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
-    color: #ffffff; /* Ensures text color is visible against the background */
+    color: #ffffff;
+    margin: 20px 35px; /* Adjust margins if necessary */
 }
 
 
@@ -117,6 +116,7 @@ body {
         width: 200px;
         background-color: #FFC0CB;
         position: relative;
+       margin-top: -20px;
 }
 
 .about-box::before, .skills-box::before, .projects-box::before, .experiences-box::before {
@@ -204,6 +204,7 @@ middle-container, .lower-container {
   width: 20px; /* Makes the image inside the button smaller */
     height: 20px; /* Adjusts height to match the new width, maintaining aspect ratio */
     margin-right: 15px; /* 
+    text-decoration: none;
 }
 
 .software-button span {
@@ -241,14 +242,24 @@ about-text, .skills-text, .projects-text, .experiences-text {
     border: 2px solid #000000; /* Keeps the border settings */
     text-align: center;
     cursor: pointer;
-    color: white;
+    color: #002244;
     font-size: 15px; 
     border-radius: 8px;
     display: inline-block;
     outline: none;
     margin-top: 8px;
-    width: 200px; /* Increased width for a longer button, adjust as needed */
+    width: 180px; /* Increased width for a longer button, adjust as needed */
     padding: 1px 20px; 
-   line-height: 20px;
-   height: 20px;
+   line-height: 14px;
+}
+
+
+.lower-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+    margin-top: -20px; /* Move up the entire container */
 }
