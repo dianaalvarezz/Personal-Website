@@ -185,21 +185,25 @@ middle-container, .lower-container {
  }
 
 .software-button {
+    padding: 5px 10px; /* Reduces padding to make buttons smaller */
+    font-size: 14px; /* Decreases font size for the text inside the buttons */
+    width: auto; /* Or specify a smaller fixed width */
+    height: auto; /* Or specify a smaller fixed height */
+    margin-right: 5px; /* Adjusts margin for spacing between buttons, if needed */
+    margin-bottom: 5px; /* Adjusts bottom margin for spacing */
+    background-color: transparent; /* Corrected to make the background transparent */
+    border: none; /* Ensures there's no border unless you want one */
+    color: white; /* Adjusts the text color to white, or any color you prefer */
     display: flex;
     align-items: center;
-    background-color: transparent; /* No background color */
-    border: none; /* Removes border */
-    padding: 10px;
-    margin-bottom: 10px;
     cursor: pointer;
     text-decoration: none;
-    color: white; /* Text color */
 }
 
 .software-button img {
-    max-width: 40px; /* Adjust as needed */
-    max-height: 40px; /* Adjust as needed */
-    margin-right: 15px; /* Increase space between the image and text */
+  width: 20px; /* Makes the image inside the button smaller */
+    height: 20px; /* Adjusts height to match the new width, maintaining aspect ratio */
+    margin-right: 15px; /* 
 }
 
 .software-button span {
@@ -230,20 +234,21 @@ about-text, .skills-text, .projects-text, .experiences-text {
 }
 
 .long-button {
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        text-decoration: none;
-        background-color: #FFC0CB;
-        border: 2px solid #000000;
-        text-align: center;
-        cursor: pointer;
-        color: white;
-        font-size: 20px;
-        border-radius: 8px;
-        display: inline-block;
-        outline: none;
-        margin-top: 8px;
-        width: 280;
-        height: auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FFC0CB; /* Keeps the pink background */
+    border: 2px solid #000000; /* Keeps the border settings */
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: 15px; 
+    border-radius: 8px;
+    display: inline-block;
+    outline: none;
+    margin-top: 8px;
+    width: 200px; /* Increased width for a longer button, adjust as needed */
+    padding: 1px 20px; 
+   line-height: 20px;
+   height: 20px;
 }
-
