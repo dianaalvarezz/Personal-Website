@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+<div class="top-box">
+        <div class="header">
+            <a href="index.html" class="name">Diana Alvarez</a>
+                <div class="social-img">
+                    <a href="https://www.instagram.com/dianaalvarez321" target="_blank">
+                        <img src="insta.png" alt="Instagram Logo" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dianaalvarez12/" target="_blank">
+                        <img src="linkedin.png" alt="LinkedIn Logo" class="social-icon">
+                    </a>
+                    <a href="mailto:diana.alvarez7403@gmail.com">
+                        <img src="gmail.png" alt="Gmail Logo" class="social-icon">
+                    </a>
+                    <a href="https://github.com/dianaalvarezz" target="_blank">
+                        <img src="github.png" alt="GitHub Logo" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">          
+        <a href="about.html" class="button">About</a>
+        <a href="skills.html" class="button">Skills</a>
+        <a href="projects.html" class="button">Projects</a>
+        <a href="experiences.html" class="button">Experiences</a>
+        <a href="resume.html" class="button">Resume</a>
+    </div>
+
+
+    <h1>Projects</h1>
+    <h2>This is my current portfolio of coding projects.</h2>
+
+     <p>They are written in various languages including C++, css, html, and python.</p>
+
+<!-- Add this below your <p> tag -->
+<div id="projects-container"></div>
+
+<script>
+    fetch('https://api.github.com/users/dianaalvarezz/repos')
+    .then(response => response.json())
+    .then(repos => {
+        const container = document.getElementById('projects-container');
+        repos.forEach(repo => {
+            // Create elements for each project
+            const projectDiv = document.createElement('div');
+            projectDiv.className = 'project';
+            projectDiv.innerHTML = `
+                <h3>${repo.name}</h3>
+                <p>${repo.description || 'No description available.'}</p>
+                <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+                <p>Primary Language: ${repo.language || 'Not specified'}</p>
+            `;
+            container.appendChild(projectDiv);
+        });
+    })
+    .catch(error => console.error('Error fetching GitHub repos:', error));
+</script>
+
+
+
+
+
+
+</body>
+</html>
