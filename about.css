@@ -123,3 +123,8 @@ body {
 font-family: Helvetica, Arial, sans-serif;
 
 }
+
+
+.education, .philosophy, .hobbies, .achievements, .work{
+background-color: #FFC0CB;
+}
