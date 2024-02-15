@@ -5,6 +5,37 @@
     <title>Resume</title>
         <link rel="icon" href="logo.png" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="resume.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@media screen and (max-width: 768px) {
+            body {
+                margin: 0px;
+                padding: 0px;
+            }
+
+             .body2 {
+                 padding-left: 20px;
+                 padding-right: 20px;
+           }
+
+            .top-box, .button-container {
+                margin: 0;
+                width: auto; 
+            }
+
+            .button-container .button {
+                font-size: 18px; /* Smaller font size for buttons */
+                padding: 0px; /* Smaller padding */
+                margin: 0px; /* Reduce margin */
+                width: auto; /* Allow buttons to adjust based on content */
+            }
+
+            .education-details, .project-detail {
+                flex-direction: column; /* Stack elements vertically */
+            }
+
+        }
+</style>
 </head>
 <body>
 <header>
@@ -35,10 +66,12 @@
         <a href="experiences.html" class="button">Experiences</a>
         <a href="resume.html" class="button">Resume</a>
     </div>
+<div class="body2">
     <div class="center">
         <h1>Diana S. Alvarez</h1>
             <p>Wheeling, IL | (224) 334-7132 | diana.alvarez7403@gmail.com | United States Citizen</p>
-    </div>            
+    </div>  
+   
 </header>
 
 <section id="summary">
@@ -129,6 +162,10 @@
     <h2>Current Memberships</h2>
         <p>Mars Rover Club – Member    ||    Robotics Club – Member    ||    Society of Women Engineers – Member    ||    Society of Professional Hispanic Engineers – Member</p>
 </section>
+</div>
+
+
+
 
 </body>
 </html>
