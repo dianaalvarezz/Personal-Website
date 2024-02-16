@@ -90,9 +90,9 @@ body {
     padding: 1em; /* Responsive space inside the box */
     margin: 1em auto; /* Responsive space outside the box */
     font-size: 1rem; /* Responsive font size */
-    background-color: #002244;
-    border-radius: 5px; /* Example border radius */
-    color:#FFC0CB;
+    background-color:  #002244;
+    border-radius: 10px; /* Example border radius */
+    color: #FFC0CB;
     font-size: 12px;
     width: 350px;
 }
@@ -136,14 +136,13 @@ align-items: center; /* Centers children horizontally */
 
 
 .education, .philosophy, .hobbies, .achievements, .work{
-    background-color: #FFF2F5;
+    background-color: #eaeaea;  
 }
 
 .title {
     display: flex; /* Makes .title a flex container */
-    justify-content: center; /* Horizontally centers the flex items (children) */
-    align-items: center; /* Vertically centers the flex items (children) in case of multiple lines of text or multiple elements */
-    border-bottom: 2px solid #ccc; /* Keeps your bottom border */
+    justify-content: center;
+    align-items: center; 
     width: 100%; /* Maintains full width */
     text-align: center; /* Centers the text inside */
 }
