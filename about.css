@@ -99,13 +99,24 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+    grid-template-columns: repeat(3, 1fr); 
     grid-gap: 30px; /* Space between items */
-    width: 100%; /* Ensure grid takes full available width */
-    max-width: 1200px; /* Optional: limits the grid's maximum width */
-    margin: auto; /* Centers the grid horizontally if under max-width */
+    align-items: start;
+    justify-content: center; /* Center the grid items */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
+
+.grid {
+    row-gap: 50px; /* Larger value for more space between rows */
+    column-gap: 30px; /* Maintain your column gap as is */
+}
+
+.hobbies, .achievements, .work {
+    margin: 0 20px; /* Adjust the horizontal margin as needed */
+}
+
 
 .grid > div {
    display: flex;
