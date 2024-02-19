@@ -6,6 +6,7 @@ body {
         justify-content: center;
         align-items: center; 
         height: 100%;
+        background-color: #f5f5f5;
 }
 
 .top-box {
@@ -37,7 +38,7 @@ body {
         width: 100%;
         background-color: #FFC0CB;
         z-index: 1000;
-        display: flex;a
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
@@ -79,17 +80,43 @@ body {
     margin-left: 30px;
 }
 
+.text {
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
 
+}
+.section {
+     font-family: Helvetica, Arial, sans-serif;
+    padding: 1em; /* Responsive space inside the box */
+    margin: 1em auto; /* Responsive space outside the box */
+    font-size: 1rem; /* Responsive font size */
+    background-color:  #002244;
+    border-radius: 10px; /* Example border radius */
+    color: #FFC0CB;
+    font-size: 12px;
+    width: 350px;
+}
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    grid-template-rows: repeat(2, 1fr); /* Two equal rows */
-    grid-gap: 20px; /* Space between items */
-    width: 100%; /* Ensure grid takes full available width */
-    max-width: 1200px; /* Optional: limits the grid's maximum width */
-    margin: auto; /* Centers the grid horizontally if under max-width */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 30px; /* Space between items */
+    align-items: start;
+    justify-content: center; /* Center the grid items */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
+
+.grid {
+    row-gap: 50px; /* Larger value for more space between rows */
+    column-gap: 30px; /* Maintain your column gap as is */
+}
+
+.hobbies, .achievements, .work {
+    margin: 0 20px; /* Adjust the horizontal margin as needed */
+}
+
 
 .grid > div {
    display: flex;
@@ -101,7 +128,32 @@ body {
     height: 100%;
 }
 
+
 .picture img {
-    max-width: 100%; /* Makes sure the image does not exceed its container */
+    max-width: 80%; /* Makes sure the image does not exceed its container */
     height: auto; /* Maintains aspect ratio */
+    display: flex;
+    align-items: center;
+}
+
+
+.subheader {
+font-family: Helvetica, Arial, sans-serif;
+ color: #002244;
+align-items: center; /* Centers children horizontally */
+    text-align: center;
+
+}
+
+
+.education, .philosophy, .hobbies, .achievements, .work{
+    background-color: #eaeaea;  
+}
+
+.title {
+    display: flex; /* Makes .title a flex container */
+    justify-content: center;
+    align-items: center; 
+    width: 100%; /* Maintains full width */
+    text-align: center; /* Centers the text inside */
 }

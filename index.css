@@ -45,7 +45,7 @@ body {
 }
 
 .button {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
@@ -87,19 +87,21 @@ body {
 }
 
 .welcome-box, .software-box {
-       background-color: #002244;
-    width: 300px; /* Fixed width */
-    height: 200px; /* Fixed height */
-    margin: 35px;
+    background-color: #002244;
+    width: 400px; /* Adjusted width */
+    min-height: 250px; /* Adjusted min-height for consistency */
     padding: 20px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    margin: 20px 35px; /* Adjust margins if necessary */
 }
+
 
 .picture {
         margin: 0;
@@ -114,6 +116,7 @@ body {
         width: 200px;
         background-color: #FFC0CB;
         position: relative;
+       margin-top: -20px;
 }
 
 .about-box::before, .skills-box::before, .projects-box::before, .experiences-box::before {
@@ -125,6 +128,20 @@ body {
     right: 0;
     height: 30px; /* Thickness of the strip */
     background-color: #ff9dab;
+}
+
+.middle-box {
+    display: flex;
+    flex-direction: row; /* Items are laid out in a row */
+    justify-content: center; /* Centers items horizontally */
+    align-items: flex-start; /* Aligns items to start at the same level */
+    gap: 30px; /* Adjust this value to increase the space between items */
+    width: 100%;
+    padding: 20px;
+}
+
+.picture, .welcome-box, .software-box {
+    margin: 20px; /* Adds margin around each item for additional spacing */
 }
 
 .welcome-box, .software-box, .about-box, .skills-box, .projects-box, .experiences-box {
@@ -168,21 +185,26 @@ middle-container, .lower-container {
  }
 
 .software-button {
+    padding: 5px 10px; /* Reduces padding to make buttons smaller */
+    font-size: 14px; /* Decreases font size for the text inside the buttons */
+    width: auto; /* Or specify a smaller fixed width */
+    height: auto; /* Or specify a smaller fixed height */
+    margin-right: 5px; /* Adjusts margin for spacing between buttons, if needed */
+    margin-bottom: 5px; /* Adjusts bottom margin for spacing */
+    background-color: transparent; /* Corrected to make the background transparent */
+    border: none; /* Ensures there's no border unless you want one */
+    color: white; /* Adjusts the text color to white, or any color you prefer */
     display: flex;
     align-items: center;
-    background-color: transparent; /* No background color */
-    border: none; /* Removes border */
-    padding: 10px;
-    margin-bottom: 10px;
     cursor: pointer;
     text-decoration: none;
-    color: white; /* Text color */
 }
 
 .software-button img {
-    max-width: 40px; /* Adjust as needed */
-    max-height: 40px; /* Adjust as needed */
-    margin-right: 15px; /* Increase space between the image and text */
+  width: 20px; /* Makes the image inside the button smaller */
+    height: 20px; /* Adjusts height to match the new width, maintaining aspect ratio */
+    margin-right: 15px; /* 
+    text-decoration: none;
 }
 
 .software-button span {
@@ -213,19 +235,31 @@ about-text, .skills-text, .projects-text, .experiences-text {
 }
 
 .long-button {
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        text-decoration: none;
-        background-color: #FFC0CB;
-        border: 2px solid #000000;
-        text-align: center;
-        cursor: pointer;
-        color: white;
-        font-size: 20px;
-        border-radius: 8px;
-        display: inline-block;
-        outline: none;
-        margin-top: 8px;
-        width: 280;
-        height: auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FFC0CB; /* Keeps the pink background */
+    border: 2px solid #000000; /* Keeps the border settings */
+    text-align: center;
+    cursor: pointer;
+    color: #002244;
+    font-size: 15px; 
+    border-radius: 8px;
+    display: inline-block;
+    outline: none;
+    margin-top: 8px;
+    width: 180px; /* Increased width for a longer button, adjust as needed */
+    padding: 1px 20px; 
+   line-height: 14px;
+}
+
+
+.lower-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+    margin-top: -20px; /* Move up the entire container */
 }

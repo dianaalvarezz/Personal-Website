@@ -1,0 +1,141 @@
+
+body {
+        margin: 0;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+}
+
+
+
+.top-box {
+        width: 100%;
+        background-color: #002244;
+        padding: 0px 9px;
+        box-sizing: border-box;
+        position: relative;
+}
+
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+}
+
+
+.name {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 18px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #ff8396;
+        text-decoration: none;
+}
+
+.button-container {
+        width: 100%;
+        background-color: #FFC0CB;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+        box-sizing: border-box;
+}
+
+.button {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    color: #002244;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 3px;
+    width: 120px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.button:hover {
+        background-color: #ddd;
+}
+
+.social-img {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+
+.title {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.text {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* This ensures side-by-side layout */
+    width: 100%; /* Full width of its parent */
+    align-items: flex-start; /* Aligns items to the start */
+}
+
+.programming, .systems, .soft-skills, .culture, .achievements, .languages {
+    border: 2px solid #3d5a80;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    max-width: 600px;
+    background-color:  #eaeaea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1; /* Takes up remaining space */
+    /* Add your existing styles here */
+}
+
+
+.rate {
+background-color:pink;
+}
+
+.rate-container {
+    flex: 0 0 200px; /* Fixed width for the rate section, doesn't grow or shrink */
+    height: 100vh; /* Full viewport height */
+    /* Add your existing styles here */
+}
+
+.group {
+    display: flex;
+    width: 100%; /* Full width of their parent */
+    justify-content: space-around; /* Adjust based on your design */
+}
+
+
+
+.programming, .systems, .soft-skills, .culture, .achievements, .languages {
+    flex-basis: calc(33.333% - 20px); /* Adjust the calculation based on your margins/paddings */
+    /* Your existing styles */
+}
