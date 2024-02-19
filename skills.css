@@ -100,33 +100,20 @@ body, html {
 }
 
 .box {
-    background-color: #f0f0f0;
+    background-color:  #eaeaea;
     padding: 8px; /* Further reduced padding to decrease box size */
     text-align: center;
     width: calc((90% / 3) - 100px); /* Adjust width to make boxes thinner */
     height: 300px; /* Adjust height if needed to maintain aspect ratio */
-    margin: 10px; /* Smaller margins to fit the layout */
+   margin: 10px 10px 20px;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        margin: 0; /* Adjusted margins for mobile to remove side spacing */
-    }
-
-    .sidebar {
-        width: 100%; /* Full width on small screens */
-        padding: 10px; /* Adjusted padding for smaller screen */
-    }
-
-    .boxes {
-        width: 100%; /* Full width on small screens */
-    }
-
-    .box {
-        width: calc(50% - 20px); /* Adjust for smaller screen, two boxes per row */
-        margin: 5px; /* Adjusted margins for clear spacing */
-        height: auto; /* Adjust height to be auto for better content fit */
-    }
+.title {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #002244;
+    align-items: center; /* Centers children horizontally */
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #FFC0CB;
+    
 }
