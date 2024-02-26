@@ -1,28 +1,28 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
-        margin: 0;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center; 
-        height: 100%;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
-.top-box {
-        width: 100%;
-        background-color: #002244;
-        padding: 0px 9px;
-        box-sizing: border-box;
-        position: relative;
-}
-
+/* Header */
 .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+     text-decoration: none;
 }
-
 
 .name {
         margin: 0;
@@ -30,19 +30,51 @@ body {
         font-size: 18px;
         font-family: Helvetica, Arial, sans-serif;
         color: #ff8396;
+         text-decoration: none;
+}
+
+.social-img {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+
+.top-box, .button-container {
+    width: 100vw; /* Set width to full viewport width */
+    position: relative; /* Keep this to maintain layout structure */
+    left: 50%; /* Move to the exact middle of the viewport */
+    right: 50%;
+    margin-left: -50vw; /* Shift back to align with the left edge */
+    margin-right: -50vw; /* Ensure it stretches to the right edge */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
 .button-container {
-        width: 100%;
-        background-color: #FFC0CB;
-        z-index: 1000;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 15px;
-        box-sizing: border-box;
+    width: 100vw; /* Adjust if needed */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
+    background-color: #FFC0CB;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 40px; /* Add a 20px gap underneath */
 }
+
+
 
 .button {
     font-size: 20px;
@@ -66,200 +98,94 @@ body {
         background-color: #ddd;
 }
 
-.social-img {
-        display: flex;
-        flex-direction: row;
-        margin: 20px;
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;
-}
-
-.middle-box, .lower-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.top-box {
         width: 100%;
-        padding: 20px;
-}
-
-.welcome-box, .software-box {
-    background-color: #002244;
-    width: 400px; /* Adjusted width */
-    min-height: 250px; /* Adjusted min-height for consistency */
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #ffffff;
-    margin: 20px 35px; /* Adjust margins if necessary */
-}
-
-
-.picture {
-        margin: 0;
-        border: none;
-        width: 200px; /* Fixed width for each box */
-    flex-grow: 0;
-    flex-shrink: 0; /* Prevents shrinking */
-    flex-basis: auto;
-}
-
- .about-box, .skills-box, .projects-box, .experiences-box {
-        width: 200px;
-        background-color: #FFC0CB;
+        background-color: #002244;
+        padding: 0px 9px;
+        box-sizing: border-box;
         position: relative;
-       margin-top: -20px;
 }
 
-.about-box::before, .skills-box::before, .projects-box::before, .experiences-box::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 30px; /* Thickness of the strip */
-    background-color: #ff9dab;
-}
 
-.middle-box {
+
+
+/* Main Content */
+.container {
     display: flex;
-    flex-direction: row; /* Items are laid out in a row */
-    justify-content: center; /* Centers items horizontally */
-    align-items: flex-start; /* Aligns items to start at the same level */
-    gap: 30px; /* Adjust this value to increase the space between items */
-    width: 100%;
-    padding: 20px;
-}
-
-.picture, .welcome-box, .software-box {
-    margin: 20px; /* Adds margin around each item for additional spacing */
-}
-
-.welcome-box, .software-box, .about-box, .skills-box, .projects-box, .experiences-box {
-    box-sizing: border-box;
-    min-height: 200px; /* Use min-height instead of height */
-    margin: 35px;
-    padding: 10px; /* Adjust padding as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column; /* Ensure content is stacked vertically */
-}
-
-
-.picture img {
-    max-width: 100%; /* Ensure image does not overflow its container */
-    height: auto; /* Maintain image aspect ratio */
-}
-
-
-
-middle-container, .lower-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Allows boxes to wrap if needed */
-    max-width: 80%;
-    margin: auto; /* Centers the container */
- }
-
-.pic img{
-        width: auto;     
-        max-width: 100px;  
-        max-height: 100px;
-        object-fit: contain; 
-        display: block;   
-        margin: auto;   
-        padding-top: 20px;
-        padding-bottom: 20px;
- }
-
-.software-button {
-    padding: 5px 10px; /* Reduces padding to make buttons smaller */
-    font-size: 14px; /* Decreases font size for the text inside the buttons */
-    width: auto; /* Or specify a smaller fixed width */
-    height: auto; /* Or specify a smaller fixed height */
-    margin-right: 5px; /* Adjusts margin for spacing between buttons, if needed */
-    margin-bottom: 5px; /* Adjusts bottom margin for spacing */
-    background-color: transparent; /* Corrected to make the background transparent */
-    border: none; /* Ensures there's no border unless you want one */
-    color: white; /* Adjusts the text color to white, or any color you prefer */
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.software-button img {
-  width: 20px; /* Makes the image inside the button smaller */
-    height: 20px; /* Adjusts height to match the new width, maintaining aspect ratio */
-    margin-right: 15px; /* 
-    text-decoration: none;
-}
-
-.software-button span {
-    margin-left: 15px; /* Additional space before the text */
-}
-about-text, .skills-text, .projects-text, .experiences-text {
-    font-size: 10px; /* Adjust font size as needed */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    padding: 5px; /* Ensure some padding around text */
-}
-
-.welcome-paragraph, .welcome-text, .software-text {
-    font-size: 12px; /* Adjust based on fit */
-    color: #FFC0CB;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-}
-
-.lower-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 6px; /* Reduced padding */
-}
-
-.long-button {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #FFC0CB; /* Keeps the pink background */
-    border: 2px solid #000000; /* Keeps the border settings */
-    text-align: center;
-    cursor: pointer;
-    color: #002244;
-    font-size: 15px; 
-    border-radius: 8px;
-    display: inline-block;
-    outline: none;
-    margin-top: 8px;
-    width: 180px; /* Increased width for a longer button, adjust as needed */
-    padding: 1px 20px; 
-   line-height: 14px;
-}
-
-
-.lower-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    max-width: 80%;
-    margin: auto;
-    margin-top: -20px; /* Move up the entire container */
+    justify-content: space-between;
+    padding: 0 40px; /* Add side padding */
+}
+
+.sidebar {
+    flex-basis: 20%;
+    background-color: #708090;
+    color: #ffffff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.boxes .box {
+    background-color: #F8F8F8; /* Alabaster */
+    color: #708090; /* Slate Gray for text, matching the sidebar background */
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.boxes {
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    border-radius: 5px;
+}
+
+.box h3 {
+    margin-bottom: 15px;
+    color:  #002244;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .boxes {
+        flex-basis: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
 }
