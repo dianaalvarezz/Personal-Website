@@ -1,118 +1,120 @@
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-    padding: 20px;
     margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .top-box {
-    background-color: #222;
-    color: #fff;
+    width: 100%;
+    background: linear-gradient(to right, #002244, #004488); /* Navy to darker navy gradient */
     padding: 20px 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid #ff8396; /* Soft pink border */
 }
 
-.header .name {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    padding-left: 20px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
 }
-
+.name{
+  margin: 0;
+        padding-left: 20px;
+        font-size: 18px;
+        font-family: Helvetica, Arial, sans-serif;
+        color: #ff8396;
+         text-decoration: none;
+}
 .social-img {
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: flex-end; /* Aligns social icons to the end (right side) */
+    flex-grow: 1; /* Allows the social icon container to take up available space */
+    margin-left: auto; /* Pushes the social icons container to the right */
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
+    margin-left: 30px; /* Spacing between social icons */
+    width: 30px; /* Standard size for social icons */
+    height: 30px;
 }
 
 .button-container {
+    width: 100%;
+    background-color: transparent;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
 }
 
-.button {
-    background-color: #007bff;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+/* Remaining styles for .button, .top-box, and other elements stay as previously defined */
+
+
+.social-img {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
 }
 
-.button:hover {
-    background-color: #0056b3;
-}
+/* Continue with project container and card styles as before */
 
-
-body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-    padding: 20px;
-    margin: 0;
-}
-
-
-/* Grid Layout for Projects */
 #projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
+    width: 90%; /* Optimized width for better layout */
+    max-width: 1200px; /* Maximum width to ensure content does not stretch too far on larger screens */
+    margin-top: 40px; /* Added space above for visual separation */
 }
 
 .project {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    text-align: center;
+    background-color: #ffffff; /* White for a clean card look */
+    color: #002244; /* Navy text for contrast */
+    border: 2px solid #FFC0CB; /* Soft pink border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px); /* Lift effect on hover for interactivity */
 }
 
 .project h3 {
-    background-color: #007bff;
-    color: #ffffff;
-    margin-top: 0;
-    padding: 15px 20px;
-}
-
-.project p, .project a {
-    padding: 0 20px;
-    text-align: left;
+    color: #002244; /* Navy */
 }
 
 .project a {
-    background-color: #007bff;
-    color: #ffffff;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+    color: #ff8396; /* Soft pink */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Emphasize the link */
+    transition: color 0.2s ease-in-out;
 }
 
-.project img {
-    width: 100%;
-    height: auto;
+.project a:hover {
+    color: #002244; /* Navy - for a reverse hover effect */
 }
 
-
-h1, h2, p {
+h1, h2 {
+    color: #002244; /* Navy */
     text-align: center;
+    width: 100%;
+}
+
+.social-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight increase in size for interactivity */
 }
