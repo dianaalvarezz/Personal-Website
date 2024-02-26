@@ -11,9 +11,9 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    padding: 20px;
+    margin: 0; /* Ensure body margin is reset to 0 */
+  
 }
-
 /* Header */
 .header {
         display: flex;
@@ -27,7 +27,8 @@ body {
         padding-left: 20px;
         font-size: 18px;
         font-family: Helvetica, Arial, sans-serif;
-        color: #ff8396;
+        color: #ff8396;\
+    text-decoration: none;
 }
 
 .social-img {
@@ -43,6 +44,11 @@ body {
 }
 
 
+.top-box, .button-container {
+    margin-left: -20px; /* Offset the left margin by the negative amount of the body's padding */
+    margin-right: -20px; /* Offset the right margin by the negative amount of the body's padding */
+    width: calc(100% + 40px); /* Increase width to counteract the body's padding */
+}
 
 
 
