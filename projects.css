@@ -22,14 +22,17 @@ body {
     display: flex;
     justify-content: space-between; /* Maintains space between items */
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
+
 
 
 .name {
     margin: 0;
-    padding-left: 20px;
+    padding: 0px;
     font-size: 18px;
     color: #FFC0CB;
     text-decoration: none;
@@ -39,7 +42,8 @@ body {
 .social-img {
     display: flex;
     justify-content: flex-end; /* Aligns social icons to the start (left side) */
-    margin-left: auto; 
+    margin: 0; /* Ensure no margin is adding unnecessary space */
+    padding: 0; 
 }
 
 .social-icon {
@@ -64,13 +68,15 @@ body {
     padding: 10px 20px;
     margin: 5px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 20px;
     border: 2px solid   #002244; 
     transition: all 0.3s ease;
+    text-decoration: none
 }
+
 .button:hover {
-    background-color: #ff8396;
-    color: #002244;
+    background-color: #002244; 
+    color: #FFC0CB;
     border: 2px solid #002244; /* Navy border on hover for a striking visual flip */
 }
 
@@ -82,7 +88,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     width: 90%; /* Optimized width for better layout */
-    max-width: 1200px; /* Maximum width to ensure content does not stretch too far on larger screens */
+    max-width: 1200px; 
     margin-top: 40px; /* Added space above for visual separation */
 }
 
@@ -93,7 +99,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease-in-out;
 }
 
 .project:hover {
