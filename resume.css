@@ -1,115 +1,48 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
 }
 
-
-.top-box, .button-container {
-    margin-left: -200px; /* Counteract body padding */
-    margin-right: -200px; /* Counteract body padding */
-    width: calc(100% + 400px); /* Adjust width to stretch fully */
-    padding: 10px 10px; /* Adjusted padding */
-    box-sizing: border-box;
-}
-
-
-.top-box {
-    background-color: #002244;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.name {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 18px;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #ff8396;
-    text-decoration: none;
-}
-
-.social-img {
-    display: flex;
-}
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    margin-left: 15px;
-}
-
-.button-container {
- background-color: #FFC0CB;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.button {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-    color: #002244;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 5px 20px;
-    transition: 0.3s;
+header {
+    background: #f4f4f4;
+    padding: 20px;
     text-align: center;
-    margin-top: 3px;
-    border-radius: 3px;
-    width: 120px;
-    font-family: Helvetica, Arial, sans-serif;
 }
 
-.button:hover {
-    background-color: #ddd;
+header h1 {
+    margin: 0;
 }
 
-.center {
-     text-align: center;
+header p {
+    margin: 10px 0;
 }
 
-.education-details {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+section {
+    padding: 20px;
 }
 
-.left-details, .right-details {
-    flex: 1; /* Both take equal space */
+section h2 {
+    color: #333;
 }
 
-.left-details {
-    text-align: left;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.right-details {
-    text-align: right;
-}
-.project-detail {
-    display: flex;
-    flex-direction: column; /* Stack title/date and list vertically */
+ul li {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.project-title {
-    display: flex;
-    justify-content: space-between; /* Align title to left, date to right */
-    width: 100%; /* Ensure the container spans full available width */
+a {
+    color: #00f;
+    text-decoration: none;
 }
 
-.project-date {
-    white-space: nowrap; /* Keep the date from wrapping */
+a:hover {
+    text-decoration: underline;
 }
