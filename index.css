@@ -32,13 +32,15 @@ body {
 
 .name {
     margin: 0;
-    padding: 0px;
-    font-size: 18px;
+     padding: 10px 20px;
     color: #FFC0CB;
     text-decoration: none;
     text-align: left; 
+    border-radius: 25px;
+    font-size: 20px;
+    font-size: 20px;
+    border: 2px solid; 
 }
-
 .social-img {
     display: flex;
     justify-content: flex-end; /* Aligns social icons to the start (left side) */
@@ -216,6 +218,22 @@ middle-container, .lower-container {
     text-decoration: none;
 }
 
+.software-button:hover {
+      padding: 5px 10px; 
+    font-size: 14px; /* Decreases font size for the text inside the buttons */
+    width: auto; /* Or specify a smaller fixed width */
+    height: auto; /* Or specify a smaller fixed height */
+    margin-right: 5px; /* Adjusts margin for spacing between buttons, if needed */
+    margin-bottom: 5px; /* Adjusts bottom margin for spacing */
+    background-color: transparent; /* Corrected to make the background transparent */
+    border: none; /* Ensures there's no border unless you want one */
+    color: white; /* Adjusts the text color to white, or any color you prefer */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+}
 .software-button img {
   width: 20px; /* Makes the image inside the button smaller */
     height: 20px; /* Adjusts height to match the new width, maintaining aspect ratio */
