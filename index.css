@@ -41,6 +41,7 @@ body {
     font-size: 20px;
     border: 2px solid; 
 }
+
 .social-img {
     display: flex;
     justify-content: flex-end; /* Aligns social icons to the start (left side) */
@@ -118,16 +119,36 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     color: #ffffff;
     margin: 20px 35px; /* Adjust margins if necessary */
+    
 }
 
+.welcome-box:hover, .software-box:hover {
+transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Define the keyframes for the spin animation */
+@keyframes spinAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .picture {
-        margin-top: 40px;
-        border: none;
-        width: 200px; /* Fixed width for each box */
+    margin-top: 40px;
+    border: none;
+    width: 200px; /* Fixed width for each box */
     flex-grow: 0;
     flex-shrink: 0; /* Prevents shrinking */
     flex-basis: auto;
+}
+
+.picture:hover {
+ animation: spinAnimation 200ms linear infinite;
 }
 
  .about-box, .skills-box, .projects-box, .experiences-box {
@@ -135,6 +156,19 @@ body {
         background-color: #FFC0CB;
         position: relative;
        margin-top: -20px;
+       min-height: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+       justify-content: space-between;
+       height: 100%;
+}
+
+.about-box:hover, .skills-box:hover, .projects-box:hover, .experiences-box:hover {
+transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out;
 }
 
 .about-box::before, .skills-box::before, .projects-box::before, .experiences-box::before {
@@ -227,7 +261,7 @@ middle-container, .lower-container {
     margin-bottom: 5px; /* Adjusts bottom margin for spacing */
     background-color: transparent; /* Corrected to make the background transparent */
     border: none; /* Ensures there's no border unless you want one */
-    color: white; /* Adjusts the text color to white, or any color you prefer */
+    color: #FFC0CB; /* Adjusts the text color to white, or any color you prefer */
     display: flex;
     align-items: center;
     cursor: pointer;
