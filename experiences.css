@@ -31,11 +31,28 @@ body {
 
 .name {
     margin: 0;
-    padding: 0px;
-    font-size: 18px;
+     padding: 10px 20px;
     color: #FFC0CB;
     text-decoration: none;
     text-align: left; 
+    border-radius: 25px;
+    font-size: 20px;
+    font-size: 20px;
+    border: 2px solid; 
+}
+
+.name:hover {
+        background-color: #ddd;
+}
+
+.name:hover {
+    background-color: #FFC0CB;
+    color: #002244;
+    border: 2px solid #002244; 
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 20px;
+
 }
 
 .button-container {
@@ -79,6 +96,13 @@ body {
         margin-left: 30px;
 }
 
+.social-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight increase in size for interactivity */
+}
 
 .category {
     color: #FFC0CB; /* Soft pink for a pop of color */
@@ -148,6 +172,17 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 1rem;
 }
+.conference .image-section {
+    display: none; /* Start with the image section hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for the opacity */
+}
+
+.conference-title:hover + .image-section,
+.conference-title:focus + .image-section {
+    display: block; /* Show the image section when title is hovered or focused */
+    opacity: 1; /* Make it fully visible */
+}
+
 
 .image-section h2, .text-content h2 {
     font-weight: bold; /* Makes headings within sections stand out */
@@ -179,4 +214,19 @@ body {
         width: 90%; /* Increases width for smaller screens for more readable text */
     }
 }
+
+<script>
+document.querySelectorAll('.conference-title').forEach(item => {
+    item.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const imageSection = this.nextElementSibling;
+            if (imageSection.style.display === 'none') {
+                imageSection.style.display = 'block';
+            } else {
+                imageSection.style.display = 'none';
+            }
+        }
+    });
+});
+</script>
 
