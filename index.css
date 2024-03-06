@@ -182,7 +182,8 @@ transform: translateY(-5px);
     right: 0;
     height: 30px; /* Thickness of the strip */
     background-color: #ff9dab;
-    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .middle-box {
