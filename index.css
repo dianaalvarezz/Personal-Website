@@ -15,7 +15,7 @@ body {
     height: 30vh; /* Adjust height as needed */
     background-color: #FFC0CB;
     position: relative;
-    margin-top: -20px;
+    margin-top: -5vh;
     padding: 5vw;
     box-sizing: border-box;
     display: flex;
@@ -56,17 +56,23 @@ body {
     padding: 0;
 }
 
-
+.toggle-and-name-container { /* Add this class to your new wrapper div */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensure contents align to the left */
+    flex-grow: 1;
+}
 
 .name {
-    margin: 0;
+    margin-left: 20px;
      padding: 10px 20px;
     color: #FFC0CB;
     text-decoration: none;
-    text-align: left; 
+    align-items: flex-start; 
     border-radius: 25px;
     font-size: 20px;
     font-size: 20px;
+    white-space: nowrap;
     border: 2px solid; 
 }
 
@@ -112,7 +118,6 @@ body {
     border: 2px solid  #002244;
     transition: all 0.3s ease;
     text-decoration: none;
-    box-shadow: 0 9px #999;
     z-index: 1;
    white-space: nowrap;
 }
@@ -127,12 +132,7 @@ body {
     border: 2px solid #002244; 
 }
 
-.button:active {
-  background-color: #FFC0CB;
-    color:  white;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+
 
 .middle-box, .lower-box {
         display: flex;
@@ -258,8 +258,8 @@ middle-container, .lower-container {
         object-fit: contain; 
         display: block;   
         margin: auto;   
-        padding-top: 10px;
-        padding-bottom: 20px;
+        padding-top: calc(padding_vw * 60vw);
+       padding-bottom: calc(padding_vw * 60vw);
  }
 
 .software-button {
@@ -383,7 +383,7 @@ about-text, .skills-text, .projects-text, .experiences-text {
     gap: 10px;
     align-items: flex-start; /* Align items to the left */
     width: 100%; /* Ensure container takes full width */
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .toggle-item {
@@ -432,6 +432,9 @@ about-text, .skills-text, .projects-text, .experiences-text {
 
 .tgl-flat:checked + .tgl-btn {
     background-color: #002244;
+}
+.toggle-item span {
+    color: #FFC0CB; /* Change this to the desired color */
 }
 
 @keyframes spinAnimation {
