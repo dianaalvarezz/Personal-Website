@@ -28,16 +28,33 @@ body {
     padding: 0;
 }
 
-
-
 .name {
     margin: 0;
-    padding: 0px;
-    font-size: 18px;
+     padding: 10px 20px;
     color: #FFC0CB;
     text-decoration: none;
     text-align: left; 
+    border-radius: 25px;
+    font-size: 20px;
+    font-size: 20px;
+    border: 2px solid; 
 }
+
+.name:hover {
+        background-color: #ddd;
+}
+
+.name:hover {
+    background-color: #FFC0CB;
+    color: #002244;
+    border: 2px solid #002244; 
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 10px 20px;
+
+}
+
+
 
 .social-img {
     display: flex;
@@ -50,6 +67,14 @@ body {
     margin-left: 30px; /* Spacing between social icons */
     width: 30px; /* Standard size for social icons */
     height: 30px;
+}
+
+.social-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight increase in size for interactivity */
 }
 
 .button-container {
