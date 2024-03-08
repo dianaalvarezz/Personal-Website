@@ -1,3 +1,12 @@
+
+.social-icons-container {
+    display: flex;
+    justify-content:flex-end; /* Aligns social icons to the right */
+    align-items: center;
+    margin-right: 40px;
+ 
+}
+
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -10,6 +19,34 @@ body {
     min-height: 100vh;
 }
 
+.about-box, .skills-box, .projects-box, .experiences-box {
+   width: 15vw; /* Adjust width as needed */
+    height: 30vh; /* Adjust height as needed */
+    background-color: #FFC0CB;
+    position: relative;
+    margin-top: -5vh;
+    padding: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.about-box .button,
+.skills-box .button,
+.projects-box .button,
+.experiences-box .button {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: 50%; /* Position the buttons in the center */
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    z-index: 1; /* Ensure the buttons appear above other content */
+}
+
+
 .top-box {
     width: 100%;
     background: linear-gradient(to right, #002244, #004488); 
@@ -20,25 +57,32 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between; /* Maintains space between items */
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    padding: 10px 0; /* Adjust the horizontal padding if needed */
+    padding-left: 10px; /* Adjust this value to bring your toggles closer or further from the edge */
     margin: 0 auto;
-    padding: 0;
 }
 
 
+.toggle-and-name-container { /* Add this class to your new wrapper div */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensure contents align to the left */
+    margin-left: 20px;
+}
 
 .name {
-    margin: 0;
+    margin-left: 65px;
      padding: 10px 20px;
     color: #FFC0CB;
     text-decoration: none;
-    text-align: left; 
+    align-items: flex-start; 
     border-radius: 25px;
     font-size: 20px;
     font-size: 20px;
+    white-space: nowrap;
     border: 2px solid; 
 }
 
@@ -83,7 +127,9 @@ body {
     font-size: 20px;
     border: 2px solid  #002244;
     transition: all 0.3s ease;
-    text-decoration: none
+    text-decoration: none;
+    z-index: 1;
+   white-space: nowrap;
 }
 
 .button:hover {
@@ -95,6 +141,7 @@ body {
     color: #FFC0CB;
     border: 2px solid #002244; 
 }
+
 
 
 .middle-box, .lower-box {
@@ -152,23 +199,8 @@ transform: translateY(-5px);
  animation: spinAnimation 200ms linear infinite;
 }
 
- .about-box, .skills-box, .projects-box, .experiences-box {
-        width: 200px;
-        background-color: #FFC0CB;
-        position: relative;
-       margin-top: -20px;
-       min-height: 300px;
-        padding: 20px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-       justify-content: space-between;
-       height: 100%;
-    border-radius: 25px;
-}
-
 .about-box:hover, .skills-box:hover, .projects-box:hover, .experiences-box:hover {
-transform: translateY(-5px);
+    transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease-in-out;
 }
@@ -236,8 +268,8 @@ middle-container, .lower-container {
         object-fit: contain; 
         display: block;   
         margin: auto;   
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: calc(padding_vw * 60vw);
+       padding-bottom: calc(padding_vw * 60vw);
  }
 
 .software-button {
@@ -332,7 +364,7 @@ about-text, .skills-text, .projects-text, .experiences-text {
 }
 
 .long-button:hover {
-    background-color: #002244; 
+    background-color:  #002244;
     color: #FFC0CB;
     border: 2px solid #FFC0CB;
     padding: 1px 20px; 
@@ -354,3 +386,81 @@ about-text, .skills-text, .projects-text, .experiences-text {
     margin: auto;
     margin-top: -20px; /* Move up the entire container */
 } 
+
+.toggle-container, .toggle-item {
+    margin: 0;
+    padding: 0;
+}
+
+
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start; /* Align items to the left */
+    width: auto; /* Ensure container takes full width */
+    margin: 0;
+    padding: 0;
+}
+
+.toggle-item {
+    display: flex;
+    align-items: center;
+}
+
+.tgl {
+    display: none;
+}
+
+.tgl + .tgl-btn {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tgl + .tgl-btn:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    background-color:  #ffffff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.tgl:checked + .tgl-btn:after {
+    left: calc(100% - 22px);
+}
+
+.tgl + .tgl-btn, .tgl:checked + .tgl-btn {
+    background-position: center;
+    transition: background 0.3s;
+}
+
+.tgl-flat + .tgl-btn {
+    background-color:  #FFC0CB;
+}
+
+.tgl-flat:checked + .tgl-btn {
+    background-color: #002244;
+}
+.toggle-item span {
+    font-size: 14px; /* Smaller font size */
+    margin-left: 8px; 
+    color: #FFC0CB; /* Change this to the desired color */
+}
+
+@keyframes spinAnimation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spinAnimation 200ms linear infinite;
+}
