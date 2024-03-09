@@ -163,3 +163,19 @@
 </div>
 </body>
 </html>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const spinModeToggle = document.getElementById('spin-mode');
+    const spinTargets = document.querySelectorAll('.button, .sidebar, .rating-and-language, .box, .name, .social-icon');
+
+    spinModeToggle.addEventListener('change', function() {
+        if (spinModeToggle.checked) {
+            spinTargets.forEach(target => target.classList.add('spin'));
+        } else {
+            spinTargets.forEach(target => target.classList.remove('spin'));
+        }
+    });
+});
+</script>
