@@ -44,7 +44,7 @@ As a self-taught developer, embarking on this project was both challenging and r
 While DianaSaray.com is a work in progress, my goal is to continually enhance its features, design, and content. Future updates may include:
 
 - Continuing to implement a responsive design for optimal viewing on mobile devices.
-- Continuing to redesign and implement the Experiences and Resume page
+- Continuing to redesign and implement the Experiences and Resume page.
 - Further improving site accessibility and performance optimization.
 
 ## How to Navigate the Website
@@ -53,6 +53,6 @@ Visitors can easily navigate through the website using the navigation bar at the
 
 ## Contact
 
-I'm always open to feedback, suggestions, or opportunities to collaborate. Please feel free to reach out through the contact form on the website or directly via email at [Insert Your Email].
+I'm always open to feedback, suggestions, or opportunities to collaborate. Please feel free to reach out through the contact form on the website or directly via email at diana.alvarez7403@gmail.com.
 
 Thank you for visiting dianasaray.com!
