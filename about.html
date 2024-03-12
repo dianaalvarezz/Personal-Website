@@ -9,7 +9,23 @@
 <body>
 <div class="top-box">
         <div class="header">
-            <a href="index.html" class="name">Diana Alvarez</a>
+<div class="toggle-and-name-container">
+ <div class="toggle-container">
+        <div class="toggle-item">
+            <input type="checkbox" id="spin-mode" class="tgl tgl-flat" />
+            <label for="spin-mode" class="tgl-btn"></label>
+            <span>Spin Mode</span>
+        </div>
+        <div class="toggle-item">
+            <input type="checkbox" id="night-mode" class="tgl tgl-flat" />
+            <label for="night-mode" class="tgl-btn"></label>
+            <span>Night Mode</span>
+        </div>
+    </div>
+
+            <a href="index.html" class="name">Homepage</a>
+</div>
+<div class="social-icons-container"> 
                 <div class="social-img">
                     <a href="https://www.instagram.com/dianaalvarez321" target="_blank">
                         <img src="insta.png" alt="Instagram Logo" class="social-icon">
@@ -26,6 +42,7 @@
                 </div>
             </div>
     </div>
+</div>
     <div class="button-container">          
         <a href="about.html" class="button">About</a>
         <a href="skills.html" class="button">Skills</a>
@@ -93,3 +110,18 @@
 </div>
 </body>
 </html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const spinModeToggle = document.getElementById('spin-mode');
+    const spinTargets = document.querySelectorAll('.button, .education, .picture, .hobbies, .achievements, .work');
+
+    spinModeToggle.addEventListener('change', function() {
+        if (spinModeToggle.checked) {
+            spinTargets.forEach(target => target.classList.add('spin'));
+        } else {
+            spinTargets.forEach(target => target.classList.remove('spin'));
+        }
+    });
+});
+</script>
