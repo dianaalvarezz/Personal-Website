@@ -1,3 +1,11 @@
+
+.social-icons-container {
+    display: flex;
+    justify-content:flex-end; /* Aligns social icons to the right */
+    align-items: center;
+    margin-right: 40px;
+ }
+
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -20,39 +28,32 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between; /* Maintains space between items */
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    padding: 10px 0; /* Adjust the horizontal padding if needed */
+    padding-left: 10px; /* Adjust this value to bring your toggles closer or further from the edge */
     margin: 0 auto;
-    padding: 0;
 }
 
+.toggle-and-name-container { /* Add this class to your new wrapper div */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ensure contents align to the left */
+    margin-left: 20px;
+}
 
 .name {
-    margin: 0;
+    margin-left: 65px;
      padding: 10px 20px;
     color: #FFC0CB;
     text-decoration: none;
-    text-align: left; 
+    align-items: flex-start; 
     border-radius: 25px;
     font-size: 20px;
     font-size: 20px;
+    white-space: nowrap;
     border: 2px solid; 
-}
-
-.name:hover {
-        background-color: #ddd;
-}
-
-.name:hover {
-    background-color: #FFC0CB;
-    color: #002244;
-    border: 2px solid #002244; 
-    border-radius: 25px;
-    font-size: 20px;
-    padding: 10px 20px;
-
 }
 
 .button-container {
@@ -63,6 +64,7 @@ body {
     align-items: center;
     padding: 20px 0;
     flex-wrap: wrap;
+     border-radius: 10px;
 }
 
 .button {
@@ -72,9 +74,15 @@ body {
     margin: 5px;
     border-radius: 25px;
     font-size: 20px;
-    border: 2px solid   #002244; 
+    border: 2px solid  #002244;
     transition: all 0.3s ease;
-    text-decoration: none
+    text-decoration: none;
+    z-index: 1;
+   white-space: nowrap;
+}
+
+.button:hover {
+        background-color: #ddd;
 }
 
 .button:hover {
@@ -91,13 +99,13 @@ body {
 }
 
 .social-icon {
-        width: 30px;
-        height: 30px;
-        margin-left: 30px;
+    margin-left: 30px; /* Spacing between social icons */
+    width: 30px; /* Standard size for social icons */
+    height: 30px;
 }
 
 .social-icon {
-    transition: transform 0.3s ease-in-out;
+transition: transform 0.3s ease-in-out;
 }
 
 .social-icon:hover {
@@ -105,10 +113,12 @@ body {
 }
 
 .category {
-    color: #FFC0CB; /* Soft pink for a pop of color */
-    font-size: 26px; /* Slightly larger for importance */
-    font-weight: bold; /* Draws attention to section titles */
-    margin-bottom: 40px; /* Adds more space below the category title */
+    border-top: 2px solid #ccc; /* Adds a top border for separation */
+    padding-top: 20px; /* Spacing above the category title */
+    margin-top: 20px; /* Spacing above the border */
+    width: 80%; /* Control the width to center the content */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  
 }
 
 .image-section {
@@ -120,10 +130,6 @@ body {
     width: 80%; /* Maintain uniform width */
     font-size: 1.75rem;
     color: #333333;
- background-color: #f9f9f9; /* Very light background to differentiate section */
-    padding: 20px; /* Adds padding around the content for spacing */
-    border-radius: 10px; /* Softens the edges */
-    margin-top: 20px
 
 }
 
@@ -155,16 +161,8 @@ body {
     gap: 20px;
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
-.image-section, .text-content {
-    background-color: #ffffff; /* Light background to make content stand out */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Matches button style for consistency */
-    padding: 25px; /* Increased padding for better content breathing room */
-    margin: 20px 0; /* Ensure consistent vertical spacing between sections */
-}
-.text-content p, .image-section p {
-    color: #333; /* Maintaining readability while fitting the overall color scheme */
-}
+
+
 .text-content p {
     margin: 0; /* Adds a 20px margin to the bottom of each paragraph */
     flex: 1;
@@ -172,61 +170,3 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 1rem;
 }
-.conference .image-section {
-    display: none; /* Start with the image section hidden */
-    transition: opacity 0.3s ease; /* Smooth transition for the opacity */
-}
-
-.conference-title:hover + .image-section,
-.conference-title:focus + .image-section {
-    display: block; /* Show the image section when title is hovered or focused */
-    opacity: 1; /* Make it fully visible */
-}
-
-
-.image-section h2, .text-content h2 {
-    font-weight: bold; /* Makes headings within sections stand out */
-    color: #004488; /* Use the navy color for headings for consistency */
-    margin-bottom: 10px; /* Adds a bit of space below headings */
-}
-
-.text-content a, .image-section a {
-    color: #FFC0CB; /* Soft pink for links */
-    text-decoration: none; /* Removes underline */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.text-content a:hover, .image-section a:hover {
-    color: #002244; /* Navy for hover state */
-}
-
-@media (max-width: 768px) {
-    .image-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-section img {
-        margin-bottom: 20px; /* Adds space below the image when stacked */
-    }
-
-    .category, .image-section, .text-content {
-        width: 90%; /* Increases width for smaller screens for more readable text */
-    }
-}
-
-<script>
-document.querySelectorAll('.conference-title').forEach(item => {
-    item.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            const imageSection = this.nextElementSibling;
-            if (imageSection.style.display === 'none') {
-                imageSection.style.display = 'block';
-            } else {
-                imageSection.style.display = 'none';
-            }
-        }
-    });
-});
-</script>
-
