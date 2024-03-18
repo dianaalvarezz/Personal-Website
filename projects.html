@@ -8,7 +8,7 @@
     <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
-<div class="top-box">
+    <div class="top-box">
         <div class="header">
             <a href="index.html" class="name">Diana Alvarez</a>
                 <div class="social-img">
@@ -25,7 +25,6 @@
                         <img src="github.png" alt="GitHub Logo" class="social-icon">
                     </a>
                 </div>
-            </div>
         </div>
     </div>
     <div class="button-container">          
@@ -35,15 +34,13 @@
         <a href="experiences.html" class="button">Experiences</a>
         <a href="resume.html" class="button">Resume</a>
     </div>
-
-
     <h1>Projects</h1>
-    <h2>This is my current portfolio of coding projects.</h2>
-
-     <p>Here you will find various projects ranging in difficulty in a variety of languages including C++, CSS, HTML, and Python.</p>
-
-<!-- Add this below your <p> tag -->
-<div id="projects-container"></div>
+        <h2>This is my current portfolio of coding projects.</h2>
+            <p>Here you will find various projects ranging in difficulty in a variety of languages including C++, CSS,
+            HTML, and Python.</p>
+                <div id="projects-container"></div>
+</body>
+</html>
 
 <script>
     fetch('https://api.github.com/users/dianaalvarezz/repos')
@@ -66,10 +63,3 @@
     .catch(error => console.error('Error fetching GitHub repos:', error));
 </script>
 
-
-
-
-
-
-</body>
-</html>
