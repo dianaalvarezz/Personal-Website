@@ -1,47 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-        <link rel="icon" href="logo.png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="resume.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-@media screen and (max-width: 768px) {
-            body {
-                margin: 0px;
-                padding: 0px;
-            }
-
-             .body2 {
-                 padding-left: 20px;
-                 padding-right: 20px;
-           }
-
-            .top-box, .button-container {
-                margin: 0;
-                width: auto; 
-            }
-
-            .button-container .button {
-                font-size: 18px; /* Smaller font size for buttons */
-                padding: 0px; /* Smaller padding */
-                margin: 0px; /* Reduce margin */
-                width: auto; /* Allow buttons to adjust based on content */
-            }
-
-            .education-details, .project-detail {
-                flex-direction: column; /* Stack elements vertically */
-            }
-
-        }
-</style>
+    <link rel="stylesheet" type="text/css" href="resume.css">
 </head>
 <body>
-<header>
     <div class="top-box">
         <div class="header">
-            <a href="index.html" class="name">Diana Alvarez</a>
+          <div class="toggle-and-name-container">
+                <div class="toggle-container">
+                    <div class="toggle-item">
+                        <input type="checkbox" id="spin-mode" class="tgl tgl-flat" />
+                        <label for="spin-mode" class="tgl-btn"></label>
+                        <span>Spin Mode</span>
+                    </div>
+                    <div class="toggle-item">
+                        <input type="checkbox" id="night-mode" class="tgl tgl-flat" />
+                        <label for="night-mode" class="tgl-btn"></label>
+                        <span>Night Mode</span>
+                    </div>
+                </div>
+                <div class="name">Home Page</div>
+            </div>
+        <div class="social-icons-container"> 
                 <div class="social-img">
                     <a href="https://www.instagram.com/dianaalvarez321" target="_blank">
                         <img src="insta.png" alt="Instagram Logo" class="social-icon">
@@ -66,106 +49,5 @@
         <a href="experiences.html" class="button">Experiences</a>
         <a href="resume.html" class="button">Resume</a>
     </div>
-<div class="body2">
-    <div class="center">
-        <h1>Diana S. Alvarez</h1>
-            <p>Wheeling, IL | (224) 334-7132 | diana.alvarez7403@gmail.com | United States Citizen</p>
-    </div>  
-   
-</header>
-
-<section id="summary">
-    <h2>Summary </h2>
-        <p>Motivated and dedicated junior computer science student, with a strong passion for software engineering, actively pursuing a summer 2024 internship opportunity. I have consistently maintained a 4.0 GPA in computer science and have acquired a diverse skill set, including experience in programming languages such as C++, Arduino, SQL, and Python. My coursework both locally and internationally has provided me with a well-rounded education, bolstered by a solid foundation in healthcare and business principles. I am eager to apply my technical expertise and passion for software engineering to contribute effectively to your team.</p>
-</section>
-<section id="education">
-    <h2>Education</h2>
-        <div class="education-details">
-            <div class="left-details">
-                <p class="school">Northern Illinois University</p>
-                <p class="major">Bachelor of Science in Computer Science</p>
-            </div>
-            <div class="right-details">
-                <p class="graduation">Graduation: May 2025</p>
-                <p class="gpa">Cumulative GPA 3.944/4.0</p>
-            </div>
-        </div>
-</section>
-<section id="technical summary">
-    <h2>Technical Summary</h2> 
-        <p>Programing Languages: C++, Arduino, SQL, Python, HTML, PHP, Shell script programming, Network Programming  </p>
-        <p>Operating Systems: Unix, GNU/Linux, Debian </p>
-        <p>Database Management: MariaDB </p>
-</section>    
-<section id="skills">
-    <h2>Skills</h2>
-        <ul>
-            <li>System: Excel, Putty, Visual Studios, SolidWorks and GitHub</li>
-            <li>Languages: Native Spanish Speaker & Native English Speaker</li>
-            <li>Experience in application software development, including the Software Development Life Cycle </li>
-            <li>Strong problem-solving, teamwork, and communication skills</li>
-</section>
-<section id="project-experience">
-    <h2>Recent Project Experience</h2>
-        <div class="project-detail">
-            <div class="project-title">
-                <span>Sumo Robot (autonomous robot)</span>
-                <span class="project-date">October 2023 - Present</span>
-            </div>
-            <ul> 
-                <li>Key role in constructing a self-propelled, autonomous, sensing robot, which will force another Sumo Robot outside an 8’ by 8’ ring.</li>
-                <li>Collaborated with the team to write code for the Arduino embedded system, enabling the sumo robot to sense the competitor's position and distance for strategic attacks. </li> 
-            </ul>
-        </div>
-        <div class="project-detail">
-            <div class="project-title">
-                <span>Generic Algorithms and Higher Order Functions Program</span>
-                <span class="project-date">October 2023</span>
-            </div>
-            <ul>
-                <li>Implemented functions using STL generic algorithms and higher-order functions, demonstrating proficiency in various programming techniques, including lambda expressions. </li> 
-            </ul>
-        </div>
-        <div class="project-detail">
-            <div class="project-title">
-                <span>Container with Support for Iterator Programs</span>
-                <span class="project-date">September 2023</span>
-            </div>
-            <ul> 
-                <li>Designed and executed algorithms utilizing iterators for diverse computing tasks, showcasing adaptability to different programming paradigms. </li>
-            </ul>
-        </div>
-        <div class="project-detail">
-            <div class="project-title">
-                <span>Research Assistant Positions</span>
-                <span class="project-date">August 2021 - Present</span>
-            </div>
-            <ul>
-                <li>Actively involved in two research projects related to child development and biology, leading experiments, data collection, analysis, and co-authoring research publications presented at national conferences. </li>
-            </ul>
-        </div>
-</section>
-<section id="courses">
-    <h2>Relevant Engineering Coursework</h2>
-        <ul>
-            <li>Data Structure Algorithm Analysis: Applied advanced analysis and design techniques to non-numeric algorithms for data structure manipulation </li>
-            <li>Databases: Excelled in software development within a contemporary database system </li>
-            <li>Unix and Network Programing: Mastered Unix system usage, shell scripting, network programming concepts and protocols, system call level, and basic network programming in C++ </li>
-        </ul>
-</section>
-<section id="courses">
-    <h2>Leadership Positions</h2>
-        <p>Women and Gender Advocacy Alliance – President</p>
-        <p>Bread for the World – President</p>          
-</section>
-<section id="memberships">
-    <h2>Current Memberships</h2>
-        <p>Mars Rover Club – Member    ||    Robotics Club – Member    ||    Society of Women Engineers – Member    ||    Society of Professional Hispanic Engineers – Member</p>
-</section>
-</div>
-
-
-
-
 </body>
 </html>
