@@ -218,3 +218,25 @@ body {
 .right{
     text-align: right;
 }
+
+.tech {
+padding-top: 15px;
+}
+
+.skills {
+     padding-top: 15px
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects {
+    padding-top: 15px;
+}
+
+.ul {
+margin-left: 5px;
+}
