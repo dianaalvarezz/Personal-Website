@@ -185,3 +185,36 @@ body {
     color: #FFC0CB; /* Change this to the desired color */
 }
 
+.full-name {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.info {
+    display: flex;
+   gap: 10px;
+   justify-content: center;
+   padding: 15px;
+}
+
+.topic{
+     margin-top: 15px;
+     margin-left: 100px;
+     margin-right: 100px; 
+      padding-bottom: 15px;
+}
+
+.topic-text {
+     padding-top: 15px;
+}
+
+.education-text{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right{
+    text-align: right;
+}
