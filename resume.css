@@ -198,45 +198,17 @@ body {
    padding: 15px;
 }
 
-.topic{
-     margin-top: 15px;
-     margin-left: 100px;
-     margin-right: 100px; 
-      padding-bottom: 15px;
-}
-
-.topic-text {
-     padding-top: 15px;
-}
-
-.education-text{
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.right{
-    text-align: right;
-}
-
-.tech {
-padding-top: 15px;
-}
-
-.skills {
-     padding-top: 15px
-}
-
-.project-container {
+.topic-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.projects {
-    padding-top: 15px;
+.right {
+ justify-content: flex-end;
+ text-align: right;
 }
 
-.ul {
-margin-left: 5px;
+.resume-body{
+margin-left: 200px;
+margin-right: 200px;    
 }
