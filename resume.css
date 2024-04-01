@@ -212,3 +212,32 @@ body {
 margin-left: 200px;
 margin-right: 200px;    
 }
+
+hr {
+color: black;
+height: 2px;
+}
+
+.education{
+    margin-top: 15px;
+}
+
+.experiences {
+margin-top: 15px;
+}
+
+.skills {
+margin-top: 15px;
+}
+
+.projects {
+margin-top: 15px;
+}
+
+.tabbed{
+    padding-left: 40px;
+}
+
+.topic-container {
+    margin-top: 10px;
+}
