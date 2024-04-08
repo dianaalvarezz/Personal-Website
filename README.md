@@ -3,7 +3,7 @@
 Welcome to the repository for my personal website, [dianasaray.com](https://dianasaray.com). This project is a culmination of my self-taught journey into web development, exploring the fundamentals of HTML, CSS, and JavaScript. My website serves as a digital canvas to showcase my teaching profession, skills, projects, and professional journey.
 
 ## Project Overview
-
+ 
 DianaSaray.com is designed to be an interactive and engaging platform where visitors can learn more about my professional background, skills, and the projects I've undertaken. It's an ongoing project that mirrors my growth in web development and digital creativity.
 
 ### Features
