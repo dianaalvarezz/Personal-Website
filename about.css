@@ -1,4 +1,6 @@
-ocial-icons-container {
+
+
+social-icons-container {
     display: flex;
     justify-content:flex-end; /* Aligns social icons to the right */
     align-items: center;
